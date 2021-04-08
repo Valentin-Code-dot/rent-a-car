@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebProgrammingProject</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="book.css">
+</head>
+<body class="body">
+
+    <nav  id="navbar"> <!-- Start Navigation -->
+
+        <div class="logo" > <!-- Logo -->
+            <a href="index.html"><h2>RentCars</h2></a>
+        </div>
+
+    <!-- Navigation Links -->
+        <div class="menu">
+    
+            <ul class="nav_links"> 
+    
+                <li>
+                    <a href="#Home" class="active1">Home</a>
+                </li>
+                <li>
+                    <a href="#About">About</a>
+                </li>
+                <li>
+                    <a href="#Book">Book Now</a>
+                </li>
+                <li>
+                    <a href="#Testimonials">Testimonials</a>
+                </li>
+                
+            </ul>
+    
+        </div>
+    
+        <div class="social"> <!-- Start Social -->
+            <a href="#" class="social_icons"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="social_icons"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social_icons"><i class="fab fa-twitter"></i></a>
+        </div>
+    
+        <div class="menu-toggle"> <!-- Menu Toggle -->
+            <i class="fas fa-bars"></i>
+        </div>
+    
+    </nav> <!-- End Navigation -->
+
+
+    <header class="book"> <!-- Start Header -->
+
+      <div class="container container-book"> <!-- Satrt Container -->
+
+        <div class="choose_content">
+            <div class="choose_header">
+                <h2>Find Your Dream Car</h2>
+            </div>
+        </div>
+
+      </div> <!-- End Container -->
+
+    </header> <!-- End Header -->
+
+    <section> <!-- Start Section -->
+
+
+        <div class="container"> <!-- Start Container -->
+
+            <div class="choose_content">
+                <div class="choose_header hero">
+                    <h2>The Best for You</h2>
+                </div>
+            </div>
+
+            <div class="choice_content">
+                <div >
+                    <button class="toggle-sidebar"></button>
+                </div>
+            </div>
+
+        </div>    
+
+
+        <div class="container container-book-posts">
+
+            <aside class="sidebar"> <!--  Start Sidebar -->
+
+                <form >
+
+                    <div class="widget"> <!--  Start Widget -->
+
+                        <div class="widget_title">
+                            Choose your type
+                        </div> 
+    
+                        <div class="widget_body"> <!-- Start Widget Body -->
+    
+                            <div class="location">
+                                <div class="location_row">
+    
+                                        <input type="checkbox"  data-type="type"  id='car'  value="car"  class="location_checkbox">
+                                        <label class="location_btn" for='car'>Car</label>
+    
+                                        <input type="checkbox" data-type="type"   id='suv' value="suv" class="location_checkbox">
+                                        <label class="location_btn" for='suv'>SUV</label>
+    
+                                        <input type="checkbox" data-type="type"   id='van' value="van" class="location_checkbox">
+                                        <label class="location_btn" for='van'>Van</label>
+    
+                                        <input type="checkbox" data-type="type"  id='carrier' value="carrier" class="location_checkbox">
+                                        <label class="location_btn" for='carrier'>People Carrier</label>
+    
+                                </div>
+    
+                                <div class="location_row">
+                                    <input type="checkbox" id='all'  data-type="type" value="all"  checked class="location_checkbox filterTriger">
+                                    <label class="location_btn" for='all'>All types</label>
+                                </div>
+    
+                            </div>
+    
+                        </div> <!-- End Widget Body -->
+    
+                    </div> <!-- End Widget  -->
+    
+                    <div class="widget"> <!--  Start Widget -->
+    
+                        <div class="widget_title">
+                            Transmission
+                        </div> 
+    
+                        <div class="widget_body"> <!-- Start Widget Body -->
+    
+                            <label class="radio">
+    
+                                <input type="radio"  id='any'  data-type="transmission" value="" class="radio_real filterTriger" checked name="transmission">
+                                <span class="radio_fake"></span>
+                                <span class="radio_title">Any</span>
+    
+                            </label>
+    
+                            <label class="radio">
+    
+                                <input type="radio"  id='automatic' data-type="transmission" value="automatic"  class="radio_real filterTriger" name="transmission">
+                                <span class="radio_fake"></span>
+                                <span class="radio_title">Automatic</span>
+    
+                            </label>
+    
+                            <label class="radio">
+    
+                                <input type="radio" id='manual' data-type="transmission"  value="manual" class="radio_real filterTriger" name="transmission">
+                                <span class="radio_fake"></span>
+                                <span class="radio_title">Manual</span>
+    
+                            </label>
+    
+    
+    
+                        </div> <!-- End Widget Body -->
+    
+                    </div> <!-- End Widget  -->
+    
+                    <div class="widget"> <!--  Start Widget -->
+    
+                        <div class="widget_title">
+                            No. of passengers
+                        </div> 
+    
+                        <div class="widget_body"> <!-- Start Widget Body -->
+    
+                            <label class="checkbox">
+    
+                                <input type="checkbox" id="allpas"  data-type="passNum" value=""  checked class="checkbox_real filterTriger">
+                                <span class="checkbox_fake"></span>
+                                <span class="checkbox_title">Any</span>
+    
+                            </label>
+    
+                            <label class="checkbox">
+    
+                                <input type="checkbox" id="2" data-type="passNum" value="2" class="checkbox_real filterTriger">
+                                <span class="checkbox_fake"></span>
+                                <span class="checkbox_title">2</span>
+    
+                            </label>
+    
+                            <label class="checkbox">
+    
+                                <input type="checkbox" id="3" data-type="passNum" value="3" class="checkbox_real filterTriger" >
+                                <span class="checkbox_fake"></span>
+                                <span class="checkbox_title">3</span>
+    
+                            </label>
+
+                            <label class="checkbox">
+    
+                                <input type="checkbox" id="4" data-type="passNum" value="4" class="checkbox_real filterTriger" >
+                                <span class="checkbox_fake"></span>
+                                <span class="checkbox_title">4</span>
+    
+                            </label>
+    
+                            <label class="checkbox">
+    
+                                <input type="checkbox" id="5" data-type="passNum" value="5" class="checkbox_real filterTriger" >
+                                <span class="checkbox_fake"></span>
+                                <span class="checkbox_title">5</span>
+    
+                            </label>
+    
+                            <label class="checkbox">
+    
+                                <input type="checkbox" id="7" data-type="passNum" value="7" class="checkbox_real filterTriger" >
+                                <span class="checkbox_fake"></span>
+                                <span class="checkbox_title">7</span>
+    
+                            </label>
+    
+    
+    
+                        </div> <!-- End Widget Body -->
+    
+                    </div> <!-- End Widget  -->
+
+                    <div class="widget"> <!--  Start Widget -->
+    
+                        <div class="widget_title">
+                            Price
+                        </div> 
+    
+                        <div class="widget_body"> <!-- Start Widget Body -->
+    
+
+
+                            <label class="checkbox">
+    
+                                <input type="checkbox"  data-type="price" value="49" class="checkbox_real filterTriger">
+                                <span class="checkbox_fake"></span>
+                                <span class="checkbox_title"> 0 &#60; £50 </span>
+    
+                            </label>
+    
+                            <label class="checkbox">
+    
+                                <input type="checkbox"  data-type="price" value="99" class="checkbox_real filterTriger" >
+                                <span class="checkbox_fake"></span>
+                                <span class="checkbox_title"> 0 &#60; £100 </span>
+    
+                            </label>
+
+                            <label class="checkbox">
+    
+                                <input type="checkbox"  data-type="price" value="199" class="checkbox_real filterTriger" >
+                                <span class="checkbox_fake"></span>
+                                <span class="checkbox_title"> 0 &#60; £200</span>
+    
+                            </label>
+    
+                            <label class="checkbox">
+    
+                                <input type="checkbox"  data-type="price" value="299" class="checkbox_real filterTriger" >
+                                <span class="checkbox_fake"></span>
+                                <span class="checkbox_title"> 0 &#60; £300 </span>
+    
+                            </label>
+    
+                            <label class="checkbox">
+    
+                                <input type="checkbox"  data-type="price" value="3000" class="checkbox_real filterTriger" >
+                                <span class="checkbox_fake"></span>
+                                <span class="checkbox_title"> 0 &#60; £3000</span>
+    
+                            </label>
+    
+    
+    
+                        </div> <!-- End Widget Body -->
+    
+                    </div> <!-- End Widget  -->
+    
+                    <div class="widget widget_btn"> <!--  Start Widget -->
+
+                        <div class="widget_body widget_body_btn"> <!-- Start Widget Body -->
+    
+                            <button  id="filter" class="form-btn">
+                                <img src="img/search.png" alt="filter">
+                                      <span>Filter</span>
+                            </button>
+      
+                          </div> <!-- End Widget Body -->
+    
+                        <div class="widget_body widget_body_btn"> <!-- Start Widget Body -->
+    
+                          <button id="reset" type="reset" class="form-btn">
+                              <img src="img/cancel.png" alt="Reset">
+                                    <span>Reset</span>
+                          </button>
+    
+                        </div> <!-- End Widget Body -->
+    
+                    </div> <!-- End Widget  -->
+
+                </form>
+
+
+            </aside> <!-- Close Sidebar -->
+
+            <div class="post-collect">
+
+                <div id="main-card-container" class="posts-main-container posts-book">
+
+                 </div>
+
+            </div>
+
+        </div> <!-- End Container -->
+
+    </section> <!-- End Section -->
+
+    <footer> <!-- Start Footer -->
+
+        <nav>
+    
+            <div class="logo">
+                <a href="#"><h2>RentCars</h2></a>
+            </div>
+    
+            <div class="social">
+                <a href="#" class="social_icons"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="social_icons"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social_icons"><i class="fab fa-twitter"></i></a>
+            </div>
+        
+        </nav>
+    
+    </footer> <!-- End Footer -->
+
+
+<script src="filter.js"></script>
+<script src="app.js"></script>
+<script src="main.js" ></script>
+</body>
+</html>
